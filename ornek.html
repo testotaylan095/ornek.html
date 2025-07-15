@@ -4,13 +4,13 @@
 <html amp lang="tr-TR">
   <head>
     <meta charset="utf-8" />
-    <link rel="canonical" href="https://taraftarium.co" />
-    <title>Taraftarium24 - Taraftarium - Canlı Maç İzle</title>
-    <link href="/favicon.png" rel="shortcut icon" type="image/x-icon">
-    <link rel="apple-touch-icon" href="favicon.png"/>
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <link rel="canonical" href="https://justintv.shop" />
+    <title>Justin TV - Canlı Maç İzle - Bedava Maç İzle</title>
+    <link href="/32f.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/32f.png"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=0" />
     <meta name="amp-google-client-id-api" content="googleanalytics" />
-	<meta name="yandex" content="none">
+    <meta name="yandex" content="none">
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
@@ -85,17 +85,51 @@
     <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
 
     <style amp-custom>
-      /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
-      /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+      /*! Modern Sports Streaming Design */
+      /* Reset and Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       html {
+        scroll-behavior: smooth;
         font-family: sans-serif;
         line-height: 1.15;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
       }
+
       body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        color: #ffffff;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+        max-width: 100vw;
         margin: 0;
       }
+
+      /* Content overlay to ensure readability */
+      .content-overlay {
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.75) 50%, rgba(15, 23, 42, 0.85) 100%);
+        backdrop-filter: blur(1px);
+        min-height: 100vh;
+        overflow-x: hidden;
+        max-width: 100vw;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
       article,
       aside,
       footer,
@@ -1649,33 +1683,50 @@
         display: none;
       }
       .ampstart-headerbar {
-        background-color: #202020;
-        color: #000;
-        z-index: 999;
-        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        color: #ffffff;
+        z-index: 1000;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
       }
       .ampstart-headerbar + :not(amp-sidebar),
       .ampstart-headerbar + amp-sidebar + * {
-        margin-top: 3.5rem;
+        margin-top: 4rem;
       }
       .ampstart-headerbar-nav .ampstart-nav-item {
         padding: 0 1rem;
         background: transparent;
-        opacity: 0.8;
+        opacity: 0.9;
+        transition: all 0.3s ease;
       }
       .ampstart-headerbar-nav {
-        line-height: 3.5rem;
+        line-height: 4rem;
       }
       .ampstart-nav-item:active,
       .ampstart-nav-item:focus,
       .ampstart-nav-item:hover {
         opacity: 1;
+        color: #3b82f6;
       }
       .ampstart-navbar-trigger:focus {
         outline: none;
       }
       .ampstart-nav a,
-      .ampstart-navbar-trigger,
+      .ampstart-navbar-trigger {
+        cursor: pointer;
+        text-decoration: none;
+        color: #ffffff;
+        transition: color 0.3s ease;
+      }
+      .ampstart-navbar-trigger {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+      }
+      .ampstart-navbar-trigger:hover {
+        color: #3b82f6;
+      }
       .ampstart-sidebar-faq a {
         cursor: pointer;
         text-decoration: none;
@@ -1724,30 +1775,35 @@
         color: #003f93;
       }
       .ampstart-sidebar {
-        background-color: #ffa000;
-        color: #000;
+        background: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(20px);
+        color: #ffffff;
         min-width: 300px;
         width: 300px;
+        border-right: 1px solid rgba(148, 163, 184, 0.1);
       }
       .ampstart-sidebar .ampstart-icon {
-        fill: #003f93;
+        fill: #3b82f6;
       }
       .ampstart-sidebar-header {
-        line-height: 3.5rem;
-        min-height: 3.5rem;
+        line-height: 4rem;
+        min-height: 4rem;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.1);
       }
       .ampstart-sidebar .ampstart-dropdown-item,
       .ampstart-sidebar .ampstart-dropdown header,
       .ampstart-sidebar .ampstart-faq-item,
       .ampstart-sidebar .ampstart-nav-item,
       .ampstart-sidebar .ampstart-social-follow {
-        margin: 0 0 2rem;
+        margin: 0 0 1rem;
       }
       .ampstart-sidebar .ampstart-nav-dropdown {
         margin: 0;
       }
       .ampstart-sidebar .ampstart-navbar-trigger {
         line-height: inherit;
+        color: #ffffff;
+        font-size: 1.5rem;
       }
       .ampstart-navbar-trigger svg {
         pointer-events: none;
@@ -1831,110 +1887,310 @@
       h1 + .ampstart-byline time {
         font-size: 1.5rem;
         font-weight: 400;
+      }      /* Modern Menu and Match Cards */
+      .sportrgoolmenu {
+        background: rgba(30, 41, 59, 0.6);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 8px;
+        border: 1px solid rgba(148, 163, 184, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        margin: 32px 16px;
       }
-.sportrgoolmenu a {
-    margin-left: 10px;
-}
 
-.sportrgoolmenu {
-    height: 70px;
-    padding: 0 12px;
-    float: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 37px;
-    box-sizing: border-box;
-    border-radius: 3px;
-    display: inline-block;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: black;
-    font-weight: bold;
-    background-color: #4caf50; /* Yeşil renk */
-    border: 1px solid #81c784; /* Açık yeşil border */
-}
+      .sportrgoolmenu a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        background: none;
+        border: none;
+        border-radius: 12px;
+        color: #94a3b8;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        min-width: fit-content;
+        text-decoration: none;
+      }
 
-.sportrgool {
-    background-color: #1a1a1a; /* Koyu gri */
-    color: #81c784; /* Açık yeşil */
-    border-radius: 0px; 
-    margin: 10px 20px; 
-    padding: 10px 0px; 
-    display: flex;
-    align-items: center; 
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15); 
-    border-left: 4px solid #81c784; /* Sol border */
-    border-right: 4px solid #000000; /* Sağ border */
-    text-decoration: none; 
-    position: relative; 
-    clear: both; 
-}
+      .sportrgoolmenu a:hover {
+        color: #ffffff;
+        background: rgba(59, 130, 246, 0.1);
+      }
 
-.sportrgool:hover {
-    transform: scale(1.05); 
-    background-color: #333; /* Koyu gri */
-    border: none;
-    color: #81c784; 
-}
+      .sportrgoolmenu a.active {
+        background: #3b82f6;
+        color: #ffffff;
+      }
 
-.sportrgooltime {
-    font-size: 13px; 
-    font-weight: bold; 
-    text-decoration: none; 
-    margin-right: 10px; 
-    border: 1px solid white; 
-    display: inline-block; 
-    padding: 2px 7px; 
-    margin: 0 20px 0 10px; 
-    color: white; 
-    border-radius: 5px; 
-}
+      /* Match Cards */
+      .sportrgool {
+        background: rgba(30, 41, 59, 0.6);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(148, 163, 184, 0.1);
+        border-radius: 16px;
+        margin: 16px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
 
-.sportrgoolteam {
-    font-size: 13px; 
-    font-weight: bold; 
-    font-style: normal;
-    text-decoration: none; 
-    margin-right: 10px; 
-    border: 1px solid white; 
-    display: inline-block; 
-    padding: 2px 7px; 
-    margin: 0 20px 0 10px; 
-    color: rgb(23, 132, 67); 
-    border-radius: 5px;
-}
+      .sportrgool::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
 
-.sportrgoollig {
-    font-size: 10px; 
-    background-color: #000000; /* Koyu yeşil */
-    padding: 4px 8px; 
-    border-radius: 4px; 
-    text-decoration: none; 
-    display: flex; 
-    align-items: center; 
-    justify-content: flex-start; 
-}
+      .sportrgool:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        border-color: rgba(59, 130, 246, 0.3);
+      }
 
-.trgooltext { 
-    padding-left: 10px; 
-}
+      .sportrgool:hover::before {
+        opacity: 1;
+      }
 
-.site-menu {
-    width: 60%;
-    background-color: #01091a; 
-}
+      .sportrgool > * {
+        position: relative;
+        z-index: 1;
+      }      /* Time Badge */
+      .sportrgooltime {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 6px 12px;
+        color: #fff;
+        border-radius: 20px;
+        margin-right: 12px;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
 
-a:-webkit-any-link {
-    color: inherit; 
-    cursor: pointer; 
-    text-decoration: none; 
-}
+      .sportrgooltime::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #ef4444;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+
+      /* Team Name */
+      .sportrgoolteam {
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+        flex: 1 1 auto;
+        margin: 6px 12px;
+        border: none;
+        background: none;
+        transition: color 0.3s ease;
+      }
+
+      .sportrgool:hover .sportrgoolteam {
+        color: #3b82f6;
+      }
+
+      /* League Info */
+      .sportrgoollig {
+        font-size: 13px;
+        background: rgba(100, 116, 139, 0.2);
+        color: #94a3b8;
+        padding: 6px 12px;
+        border-radius: 8px;
+        margin-left: auto;
+        white-space: nowrap;
+        margin-top: 8px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .container {
+          padding: 0 20px;
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+        
+        .sportrgoolmenu {
+          margin: 20px 10px;
+          padding: 6px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .ampstart-headerbar {
+          height: 64px;
+        }
+        
+        .ampstart-headerbar + :not(amp-sidebar),
+        .ampstart-headerbar + amp-sidebar + * {
+          margin-top: 4rem;
+        }
+        
+        .sportrgoolmenu {
+          flex-direction: column;
+          gap: 8px;
+          padding: 12px;
+        }
+
+        .sportrgoolmenu a {
+          width: 100%;
+          text-align: center;
+          justify-content: center;
+        }
+        
+        .sportrgool {
+          margin: 12px 8px;
+          padding: 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 16px;
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+        
+        .sportrgool {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+          margin: 8px;
+          padding: 12px;
+        }
+
+        .sportrgooltime,
+        .sportrgoolteam,
+        .sportrgoollig {
+          width: 100%;
+          margin: 0;
+          text-align: left;
+        }
+
+        .sportrgoolteam {
+          margin: 8px 0;
+        }
+        
+        .sportrgoollig {
+          margin-top: 8px;
+        }
+      }
+
+      /* Enhanced Player Container */
+      .recipe-article {
+        background: transparent;
+        color: #ffffff;
+      }
+
+      .ampstart-subtitle {
+        color: #94a3b8;
+        font-weight: 500;
+      }
+
+      /* Footer Styles */
+      .ampstart-footer {
+        background: rgba(15, 23, 42, 0.95);
+        border-top: 1px solid rgba(148, 163, 184, 0.1);
+        margin-top: 80px;
+        padding: 32px 0;
+        color: #94a3b8;
+      }
+
+      .ampstart-footer-nav a {
+        color: #94a3b8;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .ampstart-footer-nav a:hover {
+        color: #3b82f6;
+      }
+
+      /* Social Icons */
+      .ampstart-social-follow a {
+        transition: transform 0.3s ease;
+      }
+
+      .ampstart-social-follow a:hover {
+        transform: scale(1.1);
+      }
+
+      /* Scrollbar Styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: rgba(30, 41, 59, 0.3);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: rgba(59, 130, 246, 0.5);
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(59, 130, 246, 0.7);
+      }      .trgooltext { 
+        padding-left: 16px; 
+        color: #94a3b8;
+        font-size: 14px;
+      }
+
+      .site-menu {
+        width: 60%;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(20px);
+      }
+
+      a:-webkit-any-link {
+        color: inherit; 
+        cursor: pointer; 
+        text-decoration: none; 
+      }
+
+      /* Hide/Show Content */
+      .display-none {
+        display: none;
+      }
+
+      .block {
+        display: block;
+      }
 
 
 
     </style>
   </head>
   <body>
+    <div class="content-overlay">
     <!-- Start Navbar -->
     <header
       class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4"
@@ -1947,7 +2203,7 @@ a:-webkit-any-link {
         ☰
       </div>
       <amp-img
-        src="/logo-1.png"
+        src="/justin-tv-logo.png"
         width="100"
         height="61.3"
         layout="fixed"
@@ -1989,7 +2245,7 @@ a:-webkit-any-link {
       >
         <li>
           <a
-            href="https://twitter.com/holigantvx"
+            href="#"
             target="_blank"
             class="inline-block p1"
             aria-label="Link to AMP HTML Twitter"
@@ -2010,51 +2266,33 @@ a:-webkit-any-link {
 
       <ul class="ampstart-sidebar-faq list-reset m0">
         <li class="ampstart-faq-item">
-          <a href="mailto:t24destek@proton.me" class="text-decoration-none">İletişim Mail: t24destek@proton.me</a>
+          <a href="mailto:" class="text-decoration-none">İletişim Mail:</a>
         </li>
       </ul>
     </amp-sidebar>
     <!-- End Sidebar -->
     <!-- End Navbar -->
-    <main id="content" role="main" class="">
-      <article class="recipe-article">
-        <header>
-          <span class="ampstart-subtitle block px3 pt2 mb2">Taraftarium24 | Canlı Maç İzle | Taraftarium</span>
-          <h1 class="ampstart-subtitle block px3 p3 mb2">Taraftarium24</h1>
-             
-            <a href="https://t.me/kralbet_mac_ozetleri" target="_blank">
-              <amp-img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh67zPetOSbFCRRP2ORlp-wTcEm5iSRiW1eK4EVwe8HsnAo6ceSrpnsKo8pI-zfw4cgtJizOcxjd0zNxMdzJLEB7bGli7ad0tDVxo9gbfXCpxFUONEdsmwgDkjr7PRsf8d_aeQoPKlPqjM_mj8d-fnTscy4z3MJyfG815e6SaUqMYULK7VghUAJntAMrUs/s16000/zetler.gif" alt="xasassda32" width="900" height="125" layout="responsive"></amp-img>
-            </a>
-            <a href="https://cutt.ly/PeDFQflV" target="_blank">
-              <amp-img src="https://blogger.googleusercontent.com/img/a/AVvXsEiNRkc8vlFJF1Fy556dbmPKk-RcBDqt2asUBnLSB4e68jqefKPeBeHvwMNu2Gy8EeHi1hi_cZ3T05SkLZ6B--csQSzjkVwM3_xUr-S085fLP_3ay0RzwnGU07yBogj-DvHSZGZ4PEWYxtR0PPYutVkqd01icx6I4YNe7Rn3ydiDa9UL7AZGuQnyQ6ziP-w=s16000" alt="xasassda32" width="900" height="125" layout="responsive"></amp-img>
-            </a>
-            <a href="https://t.me/kral_sosyal" target="_blank" style="color:red; background-color:black; padding:10px; display:block; font-size:18px; font-weight:bold; text-align:center;">
-              Gol Tekrarları ve anlık Futbol Haberleri İçin Tıkla
-            </a>      
-          <amp-iframe allowfullscreen="" allowtransparency="" frameborder="0" height="450" scrolling="no" src="https://yangin16yerihep17sayende.cfd/event3.html?id={burayaidgelecek}" width="auto" layout="fixed-height" sandbox="allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" style="height:450px">
-            <span placeholder="" class="amp-wp-iframe-placeholder"></span>
-            <noscript>
-              <iframe name="ekrani" frameborder="0" height="450" scrolling="no" src="https://yangin16yerihep17sayende.cfd/event3.html?id={burayaidgelecek}" width="100%"></iframe>
-            </noscript>
-          </amp-iframe>
-<a href="https://cutt.ly/deDFQFCR" target="_blank">
-            <amp-img src="https://blogger.googleusercontent.com/img/a/AVvXsEhDZl4toITRBVQPvdw0IqVNBknOXHycD8J-nzsLU2lEHxtWOJdBwv0pPd0tIvhG0RKjYvubmRctjLMlaMLffSVf_XHN_K25MFbg8RAgX5X6Wnu_zWATf5MnAklhX304wABuWkms2Ejh4pb6BSTW7mw5E0MoQcToJAQ5BVfB22j7O49qVWnbjvOhShSIJUA=s16000" alt="xasassda32" width="900" height="125" layout="responsive"></amp-img>
-          </a>
+    <main id="content" role="main" class="main">
+      <div class="container">
+        <article class="recipe-article">
+          <header>
+            <span class="ampstart-subtitle block px3 pt2 mb2">Justin TV - Canlı Maç İzle - Bedava Maç İzle</span>
+            <h1 class="ampstart-subtitle block px3 p3 mb2">Justin Tv</h1>
+               
+              
+            <div class="player-container">
+              <amp-iframe allowfullscreen="" allowtransparency="" frameborder="0" height="450" scrolling="no" src="https://yangin16yerihep17sayende.cfd/event3.html?id={burayaidgelecek}" width="auto" layout="fixed-height" sandbox="allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" style="height:450px; border-radius: 18px; overflow: hidden;">
+                <span placeholder="" class="amp-wp-iframe-placeholder"></span>
+                <noscript>
+                  <iframe name="ekrani" frameborder="0" height="450" scrolling="no" src="https://yangin16yerihep17sayende.cfd/event3.html?id={burayaidgelecek}" width="100%"></iframe>
+                </noscript>
+              </amp-iframe>
+            </div>
 
-          <a href="https://cutt.ly/YryBDU2S" target="_blank">
-            <amp-img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLs3MD5TVIlM3I2rZCiWcp3Nc0D4g3xA3G6x7H5ufC-SN7a_Yt9enJ_GAiDQydx-MQoAorFEMpGCUCD9Ro1CVSoGorjzS5ppTd14tdbUhUBnwd26aYFuAQuZE225KwEgB9MTZdFwQpr8CGM3x9AlQEzNpsWpMhNf6DSDdQQnvZ9p-sgba5c0TwvSKvdmw/s16000/neww5.gif" alt="xasassda32" width="900" height="125" layout="responsive"></amp-img>
-          </a> 
-           
-           
-          <a href="https://t.me/kraloranlar" target="_blank">
-            <amp-img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg975dlBhyjK2eiCButyUIdJSZbJb-6tBon3Rf2pbWWf6D45DcGVxwnlgJet46XRfHVHruXydGtCSzxaWeTjvptrSa3mASLiBdCb8XiESgBSaFCbUOLcPKTMTJILx1KGQct_pGS3x7-aOxHTuSu0DCTudOk8wp7ymhWBbhdhCmawwvnAlpJ09kK38fpEQ/s16000/ranlarr.gif" alt="iptvold" width="900" height="125" layout="responsive"></amp-img>
-          </a> 
  <div style="text-align: center;">
             <div class="sportrgoolmenu">
-              <a href="https://yangin15yerihep16sayende.cfd">⚽️ Günün Canlı Maçları ↓</a>
-          </div>          
-          <br/>
-
+              <a href="https://yangin15yerihep16sayende.cfd">⚽️ Günün Canlı Maçları İçin Tıkla</a>
+          </div> 
 
           <ul
             class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4"
@@ -2080,7 +2318,8 @@ a:-webkit-any-link {
             </li>
           </ul>
 
-      </article>
+        </article>
+      </div> <!-- End container -->
     </main>
 
     <!-- Start Footer -->
@@ -2088,13 +2327,14 @@ a:-webkit-any-link {
   <nav class="ampstart-footer-nav">
     <ul class="list-reset flex flex-wrap mb3">
       <li class="px1">
-        <a class="text-decoration-none ampstart-label" href="https://tco24amphd.cfd/">Taraftarium | Taraftarium24 | Ücretsiz Maç İzle</a>
+        <a class="text-decoration-none ampstart-label" href="https://justintvsh.baby/">Justin TV - Canlı Maç İzle - Bedava Maç İzle</a>
       </li>
     </ul>
   </nav>
-  <p>Taraftarium, canlı spor yayınları sunan bir web sitesidir. Bu platform, futbolseverlerin heyecanla beklediği maçları izlemelerine olanak tanımaktadır. Taraftarium üzerinden birçok futbol karşılaşmasını canlı olarak takip etmek mümkündür.</p>
-  <small>© Taraftarium24, 2023</small>
+  <p>Bu sitede bulunan hiçbir içerik kopyalanamaz veya çoğaltılamaz. Sitesinin tüm hakları saklıdır. Marka hakları korunur.  2023 © All Rights Reserved. Justin Tv</p>
+  <small>© Justin Tv, 2023</small>
 </footer>
 
+    </div> <!-- End content-overlay -->
   </body>
 </html>
